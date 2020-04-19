@@ -1,0 +1,289 @@
+/* ÁLTALÁNOS STÍLUSOK */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: dimgray;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: crimson;
+}
+
+a:hover {
+  color: maroon;
+  transition: color .15s ease-in-out;
+}
+
+/* HEADER STÍLUSOK */
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: .5rem;
+  color: hsla(0,100%,100%,.5);
+  background: hsla(100,0%,0%,.5);
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: navajowhite;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  letter-spacing: .15rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 15rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 2rem;
+  vertical-align: middle;
+  margin: .5rem;
+}
+
+/* LOCATION STÍLUSOK */
+
+.blurb img {
+  height: 8rem;
+}
+
+.blurb h3 {
+  font-weight: 850;
+}
+
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+
+.blurb::after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 35vw;
+  margin: 1.5rem auto;
+  background-color: wheat;
+}
+
+/* PROGRAM STÍLUSOK */
+
+.program {
+  width: 100vw;
+  text-align: left;
+  background: hsla(290,60%,70%,0.2);
+  color: lightcoral;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: .8rem;
+  text-align: center;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+/* GIFT STÍLUSOK */
+
+.gifts img {
+  height: 8rem;
+}
+
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+/* QAF STÍLUSOK */
+
+.qaf {
+  background: hsla(290,60%,70%,0.2);
+  color: lightcoral;
+  width: 100vw;
+  text-align: center;
+}
+
+.qaf h2 {
+  margin-top: 1rem;
+}
+
+.faq p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .2rem;
+  width: 60vw;
+  margin: 1.5rem auto;
+  background-color: indianred;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .8rem;
+}
+
+.answer {
+  margin-bottom: 1.3rem;
+}
+
+/* FOOTER STÍLUSOK */
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #606060;
+  color: hotpink;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .9rem;
+
+
+}.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+/* NEM MOBIL STÍLUSOK */
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+  
+  .hero-text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+    font-size: 7rem;
+  }
+  
+  .tagline {
+    text-transform: uppercase;
+  }
+  
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .blurb::after {
+    display: none;
+  }
+  
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+  
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+  
+  footer {
+    min-height: 7vh;
+  }
+}
